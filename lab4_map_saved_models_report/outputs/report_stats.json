@@ -1,0 +1,114 @@
+{
+  "raw_rows": 206150,
+  "raw_cols": 19,
+  "processed_rows": 164920,
+  "processed_cols": 86,
+  "store_count": 20615,
+  "month_count": 10,
+  "month_min": 1,
+  "month_max": 10,
+  "region_count": 69,
+  "categorical_feature_count_raw": 4,
+  "numeric_feature_count_raw": 14,
+  "missing_raw": 0,
+  "missing_processed": 0,
+  "target_min": 16194.87,
+  "target_q1": 20864322.675,
+  "target_median": 27918452.744999997,
+  "target_mean": 32727246.5916424,
+  "target_q3": 39233284.55,
+  "target_max": 220587049.12,
+  "target_outliers_iqr": 11027,
+  "target_outliers_iqr_share": 5.349017705554208,
+  "top_correlations_abs": {
+    "РТО прошлого месяца": 0.9762053612932856,
+    "Средний РТО за прошлые 3 месяца": 0.9584422311039603,
+    "Средний РТО магазина за прошлые месяцы": 0.9564037530258406,
+    "РТО два месяца назад": 0.9450860334136758,
+    "Количество касс": 0.6433091171559128
+  },
+  "best_model": {
+    "model": "TorchMLP",
+    "MAE": 1403011.99906106,
+    "MSE": 6459097491836.793,
+    "RMSE": 2541475.4556825436,
+    "R2": 0.9799397237426815,
+    "MAPE": 4.178912906314965,
+    "SMAPE": 4.123924951981571
+  },
+  "submission_summary": {
+    "submission": "C:\\Analytics_Statistics\\Hakaton\\1st_round\\lab4_map_saved_models_report\\outputs\\test.csv",
+    "rows": 20615,
+    "columns": [
+      "new_id",
+      "rto"
+    ],
+    "forecast_month": 11,
+    "primary_model": "save_models/torch_mlp.pth",
+    "backup_model": "save_models/random_forest.pkl",
+    "preprocessing_scaler": "C:\\Analytics_Statistics\\Hakaton\\1st_round\\models\\scaler.pkl",
+    "rto_min": 5049414.0,
+    "rto_median": 32587968.0,
+    "rto_max": 192871664.0,
+    "rto_sum": 779193614336.0,
+    "plots": [
+      "C:\\Analytics_Statistics\\Hakaton\\1st_round\\lab4_map_saved_models_report\\plots\\forecast_distribution.png",
+      "C:\\Analytics_Statistics\\Hakaton\\1st_round\\lab4_map_saved_models_report\\plots\\top_regions_average_forecast.png",
+      "C:\\Analytics_Statistics\\Hakaton\\1st_round\\lab4_map_saved_models_report\\plots\\network_total_history_forecast.png",
+      "C:\\Analytics_Statistics\\Hakaton\\1st_round\\lab4_map_saved_models_report\\plots\\october_vs_forecast.png"
+    ],
+    "note": "No model fitting is performed by this script."
+  },
+  "top_features": [
+    {
+      "feature": "РТО прошлого месяца",
+      "importance": 0.9579129345409966
+    },
+    {
+      "feature": "Средний РТО магазина за прошлые месяцы",
+      "importance": 0.007132835914175713
+    },
+    {
+      "feature": "month_sin",
+      "importance": 0.00622893929426803
+    },
+    {
+      "feature": "рост РТО относительно прошлого месяца",
+      "importance": 0.005455152374715041
+    },
+    {
+      "feature": "month_cos",
+      "importance": 0.004672192414684248
+    },
+    {
+      "feature": "Средний РТО за прошлые 3 месяца",
+      "importance": 0.0036855979986177385
+    },
+    {
+      "feature": "РТО два месяца назад",
+      "importance": 0.00323136742081905
+    },
+    {
+      "feature": "Количество домохозяйств",
+      "importance": 0.0031995464207724257
+    },
+    {
+      "feature": "Численность населения",
+      "importance": 0.001774169717246675
+    },
+    {
+      "feature": "Количество касс",
+      "importance": 0.0010298441118961848
+    }
+  ],
+  "code_url": "https://github.com/KachalovG/labsML/tree/main/lab4_map_saved_models_report",
+  "script_url": "https://github.com/KachalovG/labsML/blob/main/lab4_map_saved_models_report/saved_model_pipeline.py",
+  "extra_plots": [
+    "C:\\Analytics_Statistics\\Hakaton\\1st_round\\lab4_map_saved_models_report\\plots\\eda_target_distribution.png",
+    "C:\\Analytics_Statistics\\Hakaton\\1st_round\\lab4_map_saved_models_report\\plots\\eda_monthly_history.png",
+    "C:\\Analytics_Statistics\\Hakaton\\1st_round\\lab4_map_saved_models_report\\plots\\eda_correlation_heatmap.png",
+    "C:\\Analytics_Statistics\\Hakaton\\1st_round\\lab4_map_saved_models_report\\plots\\eda_category_profile.png",
+    "C:\\Analytics_Statistics\\Hakaton\\1st_round\\lab4_map_saved_models_report\\plots\\model_metrics_comparison.png",
+    "C:\\Analytics_Statistics\\Hakaton\\1st_round\\lab4_map_saved_models_report\\plots\\feature_importance_random_forest.png"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "submission": "C:\\Analytics_Statistics\\Hakaton\\1st_round\\lab4_map_saved_models_report\\outputs\\test.csv",
+  "rows": 20615,
+  "columns": [
+    "new_id",
+    "rto"
+  ],
+  "forecast_month": 11,
+  "primary_model": "save_models/torch_mlp.pth",
+  "backup_model": "save_models/random_forest.pkl",
+  "preprocessing_scaler": "C:\\Analytics_Statistics\\Hakaton\\1st_round\\models\\scaler.pkl",
+  "rto_min": 5049414.0,
+  "rto_median": 32587968.0,
+  "rto_max": 192871664.0,
+  "rto_sum": 779193614336.0,
+  "plots": [
+    "C:\\Analytics_Statistics\\Hakaton\\1st_round\\lab4_map_saved_models_report\\plots\\forecast_distribution.png",
+    "C:\\Analytics_Statistics\\Hakaton\\1st_round\\lab4_map_saved_models_report\\plots\\top_regions_average_forecast.png",
+    "C:\\Analytics_Statistics\\Hakaton\\1st_round\\lab4_map_saved_models_report\\plots\\network_total_history_forecast.png",
+    "C:\\Analytics_Statistics\\Hakaton\\1st_round\\lab4_map_saved_models_report\\plots\\october_vs_forecast.png"
+  ],
+  "note": "No model fitting is performed by this script."
+}
